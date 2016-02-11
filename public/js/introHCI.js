@@ -36,11 +36,11 @@ function projName(result){
 	console.log($("#project" + result.id + " .thumbnail .details"));
 	var curProj = $("#project" + result.id + " .thumbnail .details");
 
-	var innerHTML = '<a href="#" class="thumbnail"> ' + 
+	var innerHTML = 
 					'<img src="' + result['image'] + '" class="detailsImage">' + 
 					'<p>' + result['title'] + '<p>' + 
 					'<p><small>' + result['date'] + '</small></p>' + 
-					'<p><small>' + result['summary'] + '</small></p></a>';
+					'<p><small>' + result['summary'] + '</small></p>';
 
 	curProj.html(innerHTML);
 }
